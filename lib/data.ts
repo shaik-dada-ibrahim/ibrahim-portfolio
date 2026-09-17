@@ -1,7 +1,7 @@
 export const site = {
   name: "Shaik Dada Ibrahim",
-  title: "Software Configuration Engineer · Python | Next.js",
-  location: "Kurnool, AP, India",
+  title: "Business Analyst @ WyzMindZ Solutions · Automation & Agentic AI",
+  location: "Bengaluru, India",
   email: "sdi.dadaibrahim.mj@gmail.com",
   phone: "+91 7997923771",
   social: {
@@ -10,13 +10,16 @@ export const site = {
     whatsapp: "https://wa.link/7xk626"
   },
   summary:
-    "Entry-level Software Configuration Engineer with strong proficiency in Python, Git-based workflows, and web fundamentals. Passionate about clean builds, release hygiene, and automation.",
+    "Business Analyst at WyzMindZ Solutions (Suryojasvi Group), working across service delivery operations, data analytics, and automation on the AUTOSherpa automotive dealership CRM platform. Builds internal tooling and end-to-end workflow automations, with hands-on proficiency in n8n and agentic AI (LLM-driven pipelines) alongside strong Python and web fundamentals.",
   keywords: [
-    "Software Configuration Management",
+    "Business Analysis",
+    "Workflow Automation",
+    "n8n",
+    "Agentic AI",
     "Python",
     "Next.js",
+    "Google Apps Script",
     "Git",
-    "Release Management",
     "CI/CD"
   ]
 };
@@ -28,12 +31,14 @@ export const education = [
 ];
 
 export const skills = {
-  languages: ["Python", "JavaScript", "SQL"],
+  automation: ["n8n (cloud & self-hosted)", "GitHub Actions", "Google Apps Script", "Workflow Design"],
+  agenticAI: ["LLM-driven AI Agents", "Prompt Engineering", "AI Content Pipelines", "Multi-provider AI Fallback (Gemini/OpenRouter/Groq)"],
+  languages: ["Python", "JavaScript", "TypeScript", "SQL"],
   versionControl: ["Git", "GitHub"],
-  tools: ["VS Code", "Jupyter Notebook"],
+  tools: ["VS Code", "Jupyter Notebook", "Google Sheets/Excel (advanced formulas, VBA)"],
   scm: ["Branching", "Merging", "Release Management"],
-  web: ["HTML", "CSS", "Bootstrap", "Next.js (basic)"],
-  soft: ["Problem-solving", "Debugging", "Software Lifecycle Knowledge"]
+  web: ["HTML", "CSS", "Bootstrap", "Next.js"],
+  soft: ["Business Analysis", "Problem-solving", "Debugging", "Software Lifecycle Knowledge", "Team Leadership"]
 };
 
 export type Project = {
@@ -46,6 +51,58 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    name: "Automated Tech Blog Pipeline",
+    stack: ["n8n", "Astro", "AI Agent (LLM)", "GitHub", "Render"],
+    description:
+      "Fully autonomous blog pipeline: an n8n workflow pulls trending dev topics, an AI agent drafts an original post, and it's committed straight to a live Astro site — no manual approval step.",
+    highlights: [
+      "Scheduled end-to-end flow: topic sourcing → AI drafting → Markdown generation → auto-commit → auto-deploy",
+      "Runs on a self-hosted n8n instance with OAuth-based GitHub integration"
+    ],
+    repo: "https://github.com/dadaibrahim/my-blog"
+  },
+  {
+    name: "AI-Powered News Blog Automation",
+    stack: ["GitHub Actions", "Python", "Astro", "Gemini/OpenRouter/Groq"],
+    description:
+      "Daily automated tech news blog with a resilient 3-provider AI fallback chain — RSS stories are sourced, drafted into original articles, and published automatically via GitHub Actions.",
+    highlights: [
+      "Provider-fallback design keeps the pipeline running even if one AI API fails",
+      "Explicit anti-plagiarism instruction set — drafts are original, not copied summaries"
+    ],
+    repo: "https://github.com/dadaibrahim/news-blog"
+  },
+  {
+    name: "Billing & Payment Reminder Automation",
+    stack: ["n8n", "Google Apps Script", "Google Sheets", "Gmail"],
+    description:
+      "Automation built for a dealership CRM's finance operations — matches outstanding receivables against invoice files and sends structured payment follow-up reminders automatically.",
+    highlights: [
+      "Cross-references live Receivables and Customer Details sheets against Drive-stored invoices",
+      "Handles Drive API rate limits with batching/throttling for reliable runs"
+    ]
+  },
+  {
+    name: "BA Timesheet Leaderboard",
+    stack: ["Next.js 14", "TypeScript", "Google Apps Script"],
+    description:
+      "Internal leaderboard app for tracking Business Analyst timesheet performance, evolved from a static prototype into a full App Router application backed by a cached Apps Script API.",
+    highlights: [
+      "Same-origin API route keeps the browser decoupled from backend credentials",
+      "Token-authenticated Apps Script backend with server-side caching"
+    ]
+  },
+  {
+    name: "MRR Hierarchy Reporting System",
+    stack: ["Google Sheets (ARRAYFORMULA/LET/LAMBDA)", "Excel VBA", "Python"],
+    description:
+      "Company-wide MRR reporting workbook rolling up costs across a multi-level org hierarchy, with automated data-quality flagging and a companion Python forecasting script.",
+    highlights: [
+      "Built a monolithic hierarchical-rollup formula with individual salary lookups",
+      "Added automated warning flags for data mismatches across thousands of rows"
+    ]
+  },
   {
     name: "Spam & Fake User Detection",
     stack: ["Python", "Scikit-Learn", "Pandas", "Matplotlib"],

@@ -11,13 +11,16 @@ export default function AboutPage() {
       <Section title="About Me">
         <div className="card p-6 space-y-4">
           <p>
-            I’m an entry-level Software Configuration Engineer focused on build hygiene, versioning strategy,
-            and reliable releases. I enjoy designing clean workflows that help teams move faster without
-            breaking things.
+            I’m a Business Analyst at WyzMindZ Solutions (Suryojasvi Group), working across service delivery
+            operations, data analytics, and automation on the AUTOSherpa automotive dealership CRM platform.
+            I lead a team of Business Analysts and spend a lot of my time building internal tooling that takes
+            manual, repetitive work off people's plates.
           </p>
           <p>
-            My toolbelt includes Python, Next.js, and Git—plus an obsession with readable commits and
-            automated checks. I’m currently based in {site.location} and open to opportunities in Bengaluru.
+            Lately that means workflow automation with n8n and agentic AI — end-to-end pipelines where an AI
+            agent drafts content or a workflow chases down invoices and sends reminders, with no human in the
+            loop for the routine parts. I pair that with solid Python, Next.js, and Git fundamentals, and I’m
+            currently based in {site.location}.
           </p>
         </div>
       </Section>
