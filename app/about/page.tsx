@@ -14,7 +14,7 @@ export default function AboutPage() {
             I’m a Business Analyst at WyzMindZ Solutions (Suryojasvi Group), working across service delivery
             operations, data analytics, and automation on the AUTOSherpa automotive dealership CRM platform.
             I lead a team of Business Analysts and spend a lot of my time building internal tooling that takes
-            manual, repetitive work off people's plates.
+            manual, repetitive work off people’s plates.
           </p>
           <p>
             Lately that means workflow automation with n8n and agentic AI — end-to-end pipelines where an AI
